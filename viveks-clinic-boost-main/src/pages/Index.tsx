@@ -231,8 +231,22 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </main>
-  );
-};
+      <section className="py-10 text-center">
+         <h2 className="text-2xl font-bold text-blue-900">Meet Our Doctor</h2>
+         <img
+         src={doctorImage}
+         alt="Doctor"
+         className="w-32 h-32 rounded-full mx-auto mt-4 object-cover"
+         />
+         <p className="mt-3 text-lg font-semibold text-gray-800">
+          Dr. Shivaram HR
+          </p>
+          <p className="text-gray-600">
+            MBBS, 16+ years experience
+            </p>
+            </section>
+            </main>
+            );
+          };
 
 export default Index;

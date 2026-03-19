@@ -247,6 +247,6 @@ const Index = () => {
             </section>
             </main>
             );
-          };
+          }; 
 
 export default Index;

@@ -50,6 +50,9 @@ const Index = () => {
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-lg">
               Dr. Shivaram HR — MBBS, MD, DNB, FIPC. 16+ years of dedicated healthcare excellence.
             </p>
+            <p className="text-primary-foreground/80 text-sm">
+            📞 Call for urgent: +91 XXXXX XXXXX
+            </p>
             <div className="flex flex-wrap gap-4 pt-2">
               <Button size="lg" asChild className="text-base px-8">
                 <Link to="/appointment">

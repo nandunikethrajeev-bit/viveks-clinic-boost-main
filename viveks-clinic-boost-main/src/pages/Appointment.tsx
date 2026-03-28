@@ -43,8 +43,10 @@ const Appointment = () => {
           <div className="w-20 h-20 rounded-full bg-accent flex items-center justify-center mx-auto">
             <CheckCircle2 className="w-10 h-10 text-trust" />
           </div>
-          <h1 className="text-3xl font-bold text-foreground">Appointment Requested!</h1>
-          <p className="text-muted-foreground">Thank you for choosing Viveks Multispeciality Clinic. We'll confirm your appointment within 24 hours.</p>
+          <h1 className="text-3xl font-bold text-foreground">Appointment Submitted ✅</h1>
+          <p className="text-muted-foreground">Your appointment request has been received.</p>
+          <p className="text-muted-foreground">Our clinic will contact you shortly to confirm your booking.</p>
+          <p className="text-sm text-gray-500 mt-2">For urgent cases, please call us directly.</p>
           <Button onClick={() => setSubmitted(false)} variant="outline">Book Another Appointment</Button>
         </div>
       </main>

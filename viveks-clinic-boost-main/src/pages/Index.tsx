@@ -114,7 +114,7 @@ const Index = () => {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s) => (
-              <div key={s.title} className="bg-card rounded-xl p-6 card-elevated border border-border group">
+              <div key={s.title} className="bg-card rounded-xl p-6 card-elevated border border-border group transition duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
                   <s.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
@@ -166,7 +166,7 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((t) => (
-              <div key={t.name} className="bg-card rounded-xl p-6 card-elevated border border-border">
+              <div key={t.name} className="bg-card rounded-xl p-6 card-elevated border border-border transition duration-300 hover:shadow-xl hover:-translate-y-1">
                 <Quote className="w-8 h-8 text-primary/20 mb-3" />
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">"{t.text}"</p>
                 <div className="flex items-center gap-2">
@@ -216,13 +216,13 @@ const Index = () => {
             Schedule an appointment with Dr. Shivaram HR today and experience healthcare that puts you first.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" variant="secondary" asChild className="text-base px-8">
+            <Button size="lg" variant="secondary" asChild className="text-base px-8"> 
               <Link to="/appointment">
                 <Calendar className="w-5 h-5 mr-2" />
                 Book Appointment
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="text-base px-8 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent">
+            <Button size="lg" asChild className="text-base px-8 transition duration-300 hover:scale-105">
               <a href="tel:+919876543210">
                 <Phone className="w-5 h-5 mr-2" />
                 Call Now
@@ -236,7 +236,7 @@ const Index = () => {
          <img
          src={doctorImage}
          alt="Doctor"
-         className="w-32 h-32 rounded-full mx-auto mt-4 object-cover"
+         className="rounded-2xl w-full max-w-md mx-auto shadow-xl transition duration-300 hover:scale-105"
          />
          <p className="mt-3 text-lg font-semibold text-gray-800">
           Dr. Shivaram HR
